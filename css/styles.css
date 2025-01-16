@@ -60,7 +60,7 @@ body{
 
 /* - */
 
-.container{
+.introduction{
     height: 100vh;
     color: var(--branco--principal);
     display: grid;
@@ -71,23 +71,23 @@ body{
     margin: 0 auto;
     place-items: center;
 }
-.container__description{
+.introduction__description{
     display: flex;
     flex-direction: column;
     width: 90%;
     border: 1px solid red;
     gap: 25px;
 }
-.container__image{
+.introduction__image{
     border: 1px solid gray;
 }
-.container__title{
+.introduction__title{
     font-weight: bold;
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
-.container__text{
+.introduction__text{
     font-size: 1.2em;
     margin-bottom: 2rem;
     line-height: 1.6;
