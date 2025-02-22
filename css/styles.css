@@ -60,7 +60,7 @@ body{
 
 /* - */
 
-.introduction{
+.container{
     height: 100vh;
     color: var(--branco--principal);
     display: grid;
@@ -71,7 +71,7 @@ body{
     margin: 0 auto;
     place-items: center;
 }
-.introduction__description{
+.container__introduction{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -91,6 +91,10 @@ body{
     font-size: 1.2em;
     margin-bottom: 2rem;
     line-height: 1.6;
+}
+.introduction__subtitle{
+    font-size: 2.5rem;
+    animation: color 0.5s infinite alternate;
 }
 
 .secundary{
@@ -142,6 +146,75 @@ body{
     height: 40px;
 }
 
-.destaque{
+.green__word{
     color: var(--verde--navbar);
+}
+
+.calculate__button{
+    box-shadow: 0 0 20px var(--verde--navbar), 0 0 25px var(--verde--navbar);
+    transition: 0.5s;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: var(--verde--navbar);
+    border: 1px solid var(--verde--navbar);
+    animation: blink 1s infinite alternate;
+}
+.calculate__button__text{
+    font-size: 1.5rem;
+    color: var(--preto--principal);
+}
+
+.calculate__button:hover{
+    box-shadow: 0 0 5px var(--verde--navbar),
+    0 0 25px var(--verde--navbar), 0 0 50px var(--verde--navbar),
+    0 0 100px var(--verde--navbar), 0 0 200px var(--verde--navbar);
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 40px;
+}
+
+.flex__container {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .flex__container.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .text__content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .text__content__title{
+    font-size: 2rem;
+    color: var(--verde--navbar);
+    margin-bottom: 15px;
+  }
+
+  .image__container {
+    background-image: url("../images/team.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+
+/* ANIMATIONS */
+
+@keyframes blink {
+    0% {box-shadow: 0 0 10px var(--verde--navbar), 0 0 25px var(--verde--navbar), 0 0 50px var(--verde--navbar),
+        0 0 100px var(--verde--navbar), 0 0 200px var(--verde--navbar);}
+    100% {box-shadow: 0 0 30px var(--verde--navbar);}
+}
+
+@keyframes color {
+    0% {color: var(--verde--navbar);}
+    100% {color: var(--verde--navbar);}
 }
