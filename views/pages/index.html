@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../../assets/css/base/global.css">
+    <link rel="stylesheet" href="../../assets/css/layouts/footer.css">
+    <link rel="stylesheet" href="../../assets/css/layouts/header.css">
+    <link rel="stylesheet" href="../../assets/css/layouts/top_button.css">
+    <link rel="stylesheet" href="../../assets/css/pages/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,10 +21,10 @@
             </div>
             <ul class="navbar__list">
                 <li class="navbar__item">
-                    <a class="navbar__link">Home</a>
+                    <a class="navbar__link" href="index.html">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link">Sobre</a>
+                    <a class="navbar__link" href="https://mosaic-ai.co/home#about">Sobre</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link">Contato</a>
@@ -37,24 +38,24 @@
                 <h1 class="introduction__title">Domine o Futuro do RH com IA: Seu Copilot Chegou!</h1>
                 <p class="introduction__text">Conheça a Mosaic.ai: O Co-Piloto de IA que transforma seu RH de centro de custos para hub de inovação estratégica. Prepare-se para uma metamorfose organizacional!</p>
             </div>
-            <img class="introduction__image" src="images/8.png" alt="Logo da Mosaic">
+            <img class="introduction__image" src="../../assets/images/logo/8.png" alt="Logo da Mosaic">
         </section>
 
         <section class="benefits">
             <h2 class="benefits__title">💡 Desvende o Código do Sucesso Empresarial e:</h2>
             <div class="benefits__grid">
                 <div class="benefit__card">
-                    <img src="images/wifi-signal-waves.png" alt="Amplificar">
+                    <img src="../../assets/images/icons/wifi-signal-waves.png" alt="Amplificar">
                     <div class="circle">1</div>
                     <p><span class="highlight">Amplifique</span> o potencial da sua equipe em níveis estratosféricos</p>
                 </div>
                 <div class="benefit__card">
-                    <img src="images/cancel (1).png" alt="Eliminar">
+                    <img src="../../assets/images/icons/cancel (1).png" alt="Eliminar">
                     <div class="circle">2</div>
                     <p><span class="highlight">Elimine</span> desperdícios financeiros com precisão milimétrica</p>
                 </div>
                 <div class="benefit__card">
-                    <img src="images/top-right.png" alt="Alavancar">
+                    <img src="../../assets/images/icons/top-right.png" alt="Alavancar">
                     <div class="circle">3</div>
                     <p><span class="highlight">Alavanque</span> seu crescimento com decisões baseadas em dados.</p>
                 </div>
@@ -64,7 +65,8 @@
         <section class="cta">
             <h2 class="cta__title">🚨 Alerta: Sua Empresa Está Perdendo Talentos e Lucros!</h2>
             <p class="cta__subtitle">Descubra o Impacto no Seu Negócio!</p>
-            <button class="cta__button" onclick="window.location.href='#form'">Calcule Suas Perdas Agora</button>
+            <button class="cta__button" id="btn_to_form">Calcule Suas Perdas Agora</button>
+            <script src="../../scripts/alert_button.js"></script>
         </section>
 
         <section class="features">
@@ -76,14 +78,14 @@
                         <h2>Inovação em Gestão de Pessoas</h2>
                         <p>Visualize o poder da inovação em gestão de pessoas com ferramentas modernas e intuitivas.</p>
                     </div>
-                    <img src="images/line-chart.png" alt="Gráfico">
+                    <img src="../../assets/images/icons/line-chart.png" alt="Gráfico">
                 </div>
                 <div class="feature__card">
                     <div class="text__content">
                         <h2>Alcance Novos Patamares</h2>
                         <p>Veja como sua equipe pode alcançar novos níveis de produtividade e satisfação com nossas soluções.</p>
                     </div>
-                    <img src="images/group.png" alt="Grupo">
+                    <img src="../../assets/images/icons/group.png" alt="Grupo">
                 </div>
             </div>
             <p class="features__warning">⏰ Atenção: Vagas Limitadas para Early Adopters - Aja Agora!</p>
@@ -157,6 +159,8 @@
                 <button class="calculator__button">CALCULAR</button>
             </div>
         </section>
+        <button id="btnTopo" title="Voltar ao topo">↑</button>
+        <script src="../../scripts/top_button.js"></script>
     </main>
     <footer>
         <div class="footer__content">

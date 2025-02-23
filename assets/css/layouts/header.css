@@ -25,6 +25,20 @@
     transition: 0.3s;
     padding: 8px;
 }
+.navbar__link{
+    text-decoration: none;
+    color: var(--branco--principal);
+}
+.navbar__link:link{
+    text-decoration: none;
+    color: var(--branco--principal);
+}
+.navbar__link:visited{
+    text-decoration: none;
+}
+.navbar__link:active{
+    text-decoration: none;
+}
 .navbar__item:hover{
     background-color: var(--cinza--links);
     cursor: pointer;

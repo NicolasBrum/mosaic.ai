@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #areaBloqueada {
+            position: relative;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+
+        /* Overlay que bloqueia a área */
+        #areaBloqueada::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+            z-index: 1; /* Coloca o overlay acima do conteúdo */
+            pointer-events: none; /* Permite clicar através do overlay */
+        }
+
+        /* Quando a área está bloqueada, desabilita a interação */
+        #areaBloqueada.bloqueada::before {
+            pointer-events: auto; /* Bloqueia cliques */
+            cursor: not-allowed; /* Mostra um ícone de "não permitido" */
+        }
+    </style>
+</head>
+<body>
+    <div id="areaBloqueada">
+        <p>Esta área está bloqueada. Clique no botão para desbloqueá-la.</p>
+        <button id="botaoDesbloquear">Desbloquear Área</button>
+    </div>
+    <script src="blocked_area.js"></script>
+</body>
+</html>

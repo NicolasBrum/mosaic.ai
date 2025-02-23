@@ -1,0 +1,22 @@
+/* Estilo do botão */
+#btnTopo {
+    display: none; /* Esconde o botão inicialmente */
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    right: 20px; /* Distância da direita da tela */
+    z-index: 99; /* Garante que o botão fique acima de outros elementos */
+    border: none; /* Remove borda */
+    outline: none; /* Remove contorno */
+    background-color: #464646; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor de ponteiro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Deixa o botão redondo */
+    font-size: 18px; /* Tamanho do ícone */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+#btnTopo:hover {
+    background-color: #39A96B; /* Muda a cor ao passar o mouse */
+    border: 1px solid #464646;
+}
