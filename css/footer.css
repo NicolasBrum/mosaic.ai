@@ -1,0 +1,34 @@
+footer {
+    height: auto;
+    width: 100%;
+}
+
+.footer__content {
+    width: auto;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.footer__content p {
+    color: var(--verde--navbar);
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.footer__links a {
+    color: var(--branco--principal);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--verde--navbar);
+}
