@@ -150,19 +150,20 @@
                                 <input class="turnover__form__input"class="turnover___form__input" type="number" id="rh" name="rh" placeholder="R$"placeholder="R$" disabled required>
                             </div>
                             <div class="turnover__form__field">
-                                <label for="rh">Taxa de turnover:</label>
-                                <input class="turnover__form__input" type="number" id="rh" name="rh" placeholder="%" disabled required>
+                                <label for="turnover">Taxa de turnover:</label>
+                                <input class="turnover__form__input" type="number" id="turnover" name="turnover" placeholder="%" disabled required>
                             </div>
                         </div>
                     </form>
                     <div class="calculator__result">
                         <h2 class="calculator__result__text">Resultado</h2>
-                        <p class="calculator__result__value">R$ 50.000</p>       
+                        <p class="calculator__result__value"><span id="teste"></span>       
                     </div>
                 </div>
-                <button class="calculator__button turnover__form__input">CALCULAR</button>
+                <button class="calculator__button turnover__form__input" id="calculate__button">CALCULAR</button>
             </div>
             <script src="../../scripts/calculator.js"></script>
+            <script src="../../scripts/turnover.js"></script>
         </section>
         <button id="btnTopo" title="Voltar ao topo">↑</button>
         <script src="../../scripts/top_button.js"></script>
