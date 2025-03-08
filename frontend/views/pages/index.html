@@ -122,36 +122,36 @@
                         <div class="turnover__form__content">
                             <div class="turnover__form__field">
                                 <label for="salary">Salário do funcionário desligado:</label>
-                                <input class="turnover__form__input" type="number" id="salary" name="salary" placeholder="R$" disabled required>
+                                <input class="turnover__form__input" type="text" id="salary" name="salary" placeholder="R$" disabled required>
                             </div>
                             
                             <div class="turnover__form__field">
                                 <label for="benefits">Benefícios proporcionais:</label>
-                                <input class="turnover__form__input" type="number" id="benefits" name="benefits" placeholder="R$" disabled required>
+                                <input class="turnover__form__input" type="text" id="benefits" name="benefits" placeholder="R$" disabled required>
                             </div>
                     
                             <div class="turnover__form__field">
                                 <label for="fines">Multas rescisórias:</label>
-                                <input class="turnover__form__input"class="turnover___form__input" type="number" id="fines" name="fines" placeholder="R$" disabled required>
+                                <input class="turnover__form__input" type="text" id="fines" name="fines" placeholder="R$" disabled required>
                             </div>
                     
                             <div class="turnover__form__field">
                                 <label for="recruitment">Custos de recrutamento:</label>
-                                <input class="turnover__form__input" type="number" id="recruitment" name="recruitment" placeholder="R$" disabled required>
+                                <input class="turnover__form__input" type="text" id="recruitment" name="recruitment" placeholder="R$" disabled required>
                             </div>
 
                             <div class="turnover__form__field">
                                 <label for="training">Custos de treinamento para novo colaborador:</label>
-                                <input class="turnover__form__input" type="number" id="training" name="training" placeholder="R$" disabled required>
+                                <input class="turnover__form__input" type="text" id="training" name="training" placeholder="R$" disabled required>
                             </div>
 
                             <div class="turnover__form__field">
                                 <label for="rh">Custos com a equipe de RH:</label>
-                                <input class="turnover__form__input"class="turnover___form__input" type="number" id="rh" name="rh" placeholder="R$"placeholder="R$" disabled required>
+                                <input class="turnover__form__input" type="text" id="rh" name="rh" placeholder="R$"placeholder="R$" disabled required>
                             </div>
                             <div class="turnover__form__field">
                                 <label for="rh">Taxa de turnover:</label>
-                                <input class="turnover__form__input" type="number" id="rh" name="rh" placeholder="%" disabled required>
+                                <input class="turnover__form__input turnover__form__percentage" type="text" id="rh" name="rh" placeholder="%" disabled required>
                             </div>
                         </div>
                     </form>
@@ -163,7 +163,7 @@
                 <button class="calculator__button turnover__form__input">CALCULAR</button>
             </div>
             <script src="../../scripts/calculator.js"></script>
-            <script src="../../scripts/validator.js"></script>
+            <script src="../../scripts/field_formatter.js"></script>
         </section>
         <button id="btnTopo" title="Voltar ao topo">↑</button>
         <script src="../../scripts/top_button.js"></script>
