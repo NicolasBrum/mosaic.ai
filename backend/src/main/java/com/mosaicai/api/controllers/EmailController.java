@@ -39,7 +39,6 @@ public class EmailController {
                         .body("Invalid email domain.");
             }
         } catch (Exception e) {
-            // Logar o erro para diagnóstico
             log.error("Error during email domain validation: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body("Unexpected error: " + e.getMessage());
