@@ -313,6 +313,7 @@
     color: var(--branco--principal);
     text-align: center;
     font-size: 1.5rem;
+    
 }
 .turnover__form__field input::placeholder{
     color: rgb(223, 223, 223);

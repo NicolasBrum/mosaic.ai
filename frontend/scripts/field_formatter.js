@@ -2,7 +2,7 @@ document.querySelectorAll('.turnover__form__input:not(.turnover__form__percentag
     input.addEventListener('input', (e) => {
         let value = e.target.value.replace(/\D/g, '');
         if (value) {
-            // formatação da moeda
+            //  formatação da moeda
             value = (parseInt(value) / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         }
         e.target.value = value;
