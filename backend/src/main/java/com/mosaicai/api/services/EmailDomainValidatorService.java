@@ -13,13 +13,10 @@ public class EmailDomainValidatorService {
             lookup.setCache(null);
             Record[] records = lookup.run();
 
-            // Verifica se o domínio tem registros MX
             return records != null && records.length > 0;
         } catch (TextParseException e) {
-            // Lança uma exceção com uma mensagem detalhada
             throw new IllegalArgumentException("Invalid domain syntax: " + domain);
         } catch (Exception e) {
-            // Exceção genérica para erros de DNS
             throw new RuntimeException("DNS lookup failed for domain: " + domain + " - " + e.getMessage());
         }
     }
