@@ -31,15 +31,16 @@ public class EmailService {
                 });
 
         try {
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(APIEMAIL));
-            message.setRecipients(
+            // First email - New User Registration
+            Message message1 = new MimeMessage(session);
+            message1.setFrom(new InternetAddress(APIEMAIL));
+            message1.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(DESTINATION_EMAIL)
             );
-            message.setSubject("🎉 Novo Usuário Cadastrado: " + personInfo.getName());
+            message1.setSubject("🎉 Novo Usuário Cadastrado: " + personInfo.getName());
 
-            String htmlContent = String.format("""
+            String htmlContent1 = String.format("""
                             <html>
                             <body style="font-family: Arial, sans-serif; color: #333;">
                                 <!-- Cabeçalho com imagem -->
@@ -62,7 +63,7 @@ public class EmailService {
                                 </div>
                             </body>
                             </html>
-                            """, HEADEREMAIL,
+                            """, HEADEREMAILPRODUCTOWNER,
                     personInfo.getName(),
                     personInfo.getSurname(),
                     personInfo.getRole(),
@@ -70,10 +71,43 @@ public class EmailService {
                     personInfo.getEmail(),
                     personInfo.getEmail());
 
-            message.setContent(htmlContent, "text/html; charset=utf-8");
+            message1.setContent(htmlContent1, "text/html; charset=utf-8");
 
-            Transport.send(message);
-            System.out.println("E-mail enviado com sucesso!");
+            // Second email - Agradecimento and Updates
+            Message message2 = new MimeMessage(session);
+            message2.setFrom(new InternetAddress(APIEMAIL));
+            message2.setRecipients(
+                    Message.RecipientType.TO,
+                    InternetAddress.parse(personInfo.getEmail())
+            );
+            message2.setSubject("🎉 Atualização sobre a Plataforma Mosaic Ai!");
+
+            String htmlContent2 = String.format("""
+                            <html>
+                            <body style="font-family: Arial, sans-serif; color: #333;">
+                                <!-- Cabeçalho com imagem -->
+                                <div style="text-align: center; padding: 10px;">
+                                    <img src="%s" alt="Cabeçalho" style="width: 100%%; max-width: 600px;">
+                                </div>
+
+                                <!-- Corpo da mensagem -->
+                                <div style="padding: 20px; background-color: #f9f9f9; border-radius: 5px; max-width: 600px; margin: auto;">
+                                    <h2 style="color: #4CAF50;">Agradecemos seu interesse!</h2>
+                                    <p>Olá %s %s,</p> 
+                                    <p>Você será um dos primeiros a receber atualizações exclusivas da nossa plataforma. Estamos empolgados em tê-lo conosco!</p>
+                                    <p style="margin-top: 20px;">Se precisar de mais informações, é só entrar em contato. 😊</p>
+                                </div>
+                            </body>
+                            </html>
+                            """, HEADEREMAILCLIENT, personInfo.getName(), personInfo.getSurname());
+
+            message2.setContent(htmlContent2, "text/html; charset=utf-8");
+
+            // Sending both emails
+            Transport.send(message1);
+            Transport.send(message2);
+
+            System.out.println("E-mails enviados com sucesso!");
 
         } catch (MessagingException e) {
             e.printStackTrace();
