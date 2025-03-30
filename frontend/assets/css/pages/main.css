@@ -458,6 +458,57 @@
     }
 }
 
+.tooltip-btn {
+    background-color: #39A96B;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 10px;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+    margin-left: relative;
+}
+
+.tooltip-btn-salary {
+    margin-left: -145px;
+}
+
+.tooltip-btn-benefits {
+    margin-left: -200px;
+}
+
+.tooltip-btn-fines {
+    margin-left: -250px;
+}
+
+.tooltip-btn-recruitment {
+    margin-left: -210px;
+}
+
+.tooltip-btn-training {
+    margin-left: -50px;
+}
+
+.tooltip-btn-rh {
+    margin-left: -180px;
+}
+
+.tooltip-btn-turnover {
+    margin-left: -260px;
+}
+
+
+.tooltip-btn:hover {
+    background-color: #0056b3;
+}
+
+.tooltip-btn:focus {
+    outline: none;
+}
+
 @media (min-width: 412px) and (max-width: 914px){
 
 }
