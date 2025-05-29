@@ -1,0 +1,21 @@
+:root{
+    --preto--principal: #000000;
+    --branco--principal: #ffffff;
+    --cinza--links: #464646;
+    --cinza--secundario: #242424;
+    --verde--navbar: #39A96B;
+    --preto--logo: #171716;
+    --font-family: "Kanit", serif;;
+    --vermelho--alerta: rgb(206, 48, 48);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--preto--logo);
+    font-family: var(--font-family);
+}

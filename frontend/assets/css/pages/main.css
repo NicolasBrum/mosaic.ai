@@ -1,0 +1,514 @@
+.introduction{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.introduction__content{
+    width: 45%;
+}
+
+.introduction__title{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--verde--navbar);
+}
+.introduction__text{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: var(--branco--principal);
+}
+.introduction__subtitle{
+    font-size: 2.5rem;
+    animation: color 0.5s infinite alternate;
+}
+.introduction__image{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.benefits{
+    background-color: var(--verde--navbar);
+    padding: 60px 20px;
+    text-align: center;
+}
+.benefits__title {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: var(--branco--principal);
+}
+.benefits__grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.benefit__card {
+    background-color: var(--background-light);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px var(--cinza--secundario);
+    transition: transform 0.3s;
+}
+.benefit__card:hover {
+    transform: translateY(-10px);
+}
+.benefit__card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+.benefit__card p{
+    color: var(--branco--principal);
+}
+.circle {
+    background-color: var(--branco--principal);
+    color: var(--verde--navbar);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.highlight {
+    color: var(--branco--principal);
+    font-weight: 600;
+}
+
+.cta {
+    background-color: var(--branco--principal);
+    color: var(--verde--navbar);
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cta__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--vermelho--alerta);
+}
+.cta__subtitle {
+    font-size: 1.5rem;
+    color: var(--vermelho--alerta);
+}
+.cta__button {
+    margin-top: 20px;
+    background-color: var(--vermelho--alerta);
+    color: var(--branco--principal);
+    border: none;
+    padding: 30px 60px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    width: auto;
+    box-shadow: 0 0 20px var(--vermelho--alerta), 0 0 25px var(--verde--navbar);
+    animation: blink 1s infinite alternate;
+}
+.cta__button:hover {
+    background-color: rgb(97, 20, 20);
+}
+
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: var(--preto--logo);
+}
+.features__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--branco--principal);
+}
+.features__text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: var(--branco--principal);
+}
+.features__grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.feature__card {
+    background-color: var(--branco--principal);
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.feature__card:hover {
+    transform: translateY(-10px);
+}
+.feature__card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.features__warning {
+    font-size: 1.1em;
+    color: var(--vermelho--alerta);
+    margin-top: 40px;
+}
+.text__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form__section {
+    background-color: var(--preto--logo);
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+}
+.form__section h2{
+    color: var(--branco--principal);
+}
+
+.form__container {
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.required {
+    color: var(--verde--navbar);
+}
+
+.form__container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--branco--principal);
+    font-size: 1.1rem;
+}
+
+.form__container input {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cinza--links);
+    color: var(--branco--principal);
+    outline: none;
+    font-size: 1rem;
+}
+.form__container input:focus{
+    border: 1px solid var(--verde--navbar);
+}
+
+.form__container input[type="submit"] {
+    background-color: var(--verde--navbar);
+    color: var(--branco--principal);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 15px;
+}
+
+.form__container input[type="submit"]:hover {
+    background-color: var(--cinza--links);
+}
+
+.hero__content, .benefits__grid, .cta, .features__grid, .form-section {
+    animation: fadeIn 1s ease-out;
+}
+
+.benefit__card, .feature__card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.benefit__card:hover, .feature__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.calculator {
+    height: 100vh;
+    background-color: var(--verde--navbar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator__content {
+    border-right: 1px solid var(--verde--navbar);
+    background-color: var(--branco--principal);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.849);
+    transition: transform 0.3s;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.calculator__title{
+    color: var(--verde--navbar);
+}
+.calculator__division {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.calculator__result {
+    text-align: center;
+    width: 50%;
+}
+.calculator__result__text {
+    font-size: 2rem;
+}
+.calculator__result__value {
+    font-size: 5rem;
+}
+.calculator__button {
+    width: 50%;
+    background-color: var(--vermelho--alerta);
+    color: var(--branco--principal);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.calculator__button:hover {
+    background-color: var(--cinza--links);
+}
+
+.turnover__form__field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+.turnover__form__field input[type=text] {
+    padding: 10px;
+    width: 30%;
+    background-color: var(--verde--navbar);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--branco--principal);
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.turnover__form__field input::placeholder{
+    color: rgb(223, 223, 223);
+}
+.turnover__form__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.turnover__form__input{
+    pointer-events: auto; /* Bloqueia cliques */
+    cursor: not-allowed; /* Mostra um ícone de "não permitido" */
+}
+
+
+/* ANIMATIONS */
+
+@keyframes blink {
+    0% {box-shadow: 0 0 10px var(--vermelho--alerta), 0 0 25px var(--vermelho--alerta), 0 0 50px var(--vermelho--alerta),
+        0 0 100px var(--vermelho--alerta), 0 0 200px var(--vermelho--alerta);}
+    100% {box-shadow: 0 0 30px var(--vermelho--alerta);}
+}
+
+@keyframes color {
+    0% {color: var(--verde--navbar);}
+    100% {color: var(--verde--navbar);}
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CELULARES */
+@media (max-width: 844px){
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .navbar__list{
+        gap: 0;
+    }
+
+    .introduction{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+    .introduction__content{
+        width: 100%;
+    }
+
+    .benefits__grid{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .benefit__card{
+        width: 100%;
+    }
+
+    .feature__card{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 12px;
+        justify-content: space-between;
+    }
+    .text__content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .form__container{
+        width: 100%;
+    }
+
+    .calculator{
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .calculator__content{
+        padding: 10px;
+    }
+
+    .calculator__division{
+        flex-direction: column;
+    }
+
+    .calculator__result{
+        width: 100%;
+        height: auto;
+        margin: 30px;
+    }
+
+    .calculator__result__value{
+        overflow-wrap: break-word;
+    }
+
+    .turnover__form__field{
+        flex-direction: column;
+    }
+    .turnover__form__field input[type=number] {
+        width: 80%;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 845px) and (max-width: 1024px){
+    .form__container{
+        width: 80%;
+    }
+    .calculator__content{
+        padding: 10px;
+    }
+
+    .calculator__division{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .calculator__result{
+        width: 100%;
+    }
+    .turnover__form__field input[type=number] {
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+.tooltip-btn {
+    background-color: #39A96B;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 10px;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+    margin-left: relative;
+}
+
+.tooltip-btn-salary {
+    margin-left: -145px;
+}
+
+.tooltip-btn-benefits {
+    margin-left: -200px;
+}
+
+.tooltip-btn-fines {
+    margin-left: -250px;
+}
+
+.tooltip-btn-recruitment {
+    margin-left: -210px;
+}
+
+.tooltip-btn-training {
+    margin-left: -50px;
+}
+
+.tooltip-btn-rh {
+    margin-left: -180px;
+}
+
+.tooltip-btn-turnover {
+    margin-left: -260px;
+}
+
+
+.tooltip-btn:hover {
+    background-color: #0056b3;
+}
+
+.tooltip-btn:focus {
+    outline: none;
+}
+
+@media (min-width: 412px) and (max-width: 914px){
+
+}
