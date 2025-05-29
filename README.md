@@ -20,3 +20,5 @@
 - Formulário simples de **captura de leads**.
 - Layout **responsivo** para dispositivos móveis, tablets e desktops.
 - Estilo minimalista com foco na **clareza** e na **usabilidade**.
+
+Obs: Backend começou a ser criado, porém não foi terminado.
